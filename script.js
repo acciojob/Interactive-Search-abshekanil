@@ -1,14 +1,10 @@
-//your JS code here. If required.
+function activeSearch(){
+	let searchComponent = document.getElementById('searchComponent');
+	let searchInput = document.getElementById('searchInput');
 
-document.addEventListener('DOMContentLoaded', function(){
-	focusSearch();
-});
-
-function focusSearch(){
-	let searchInput = document.querySelector('.input');
-
-	if(searchInput)
+	if(searchComponent && searchInput)
 	{
+		searchComponent.classList.add('active');
 		searchInput.focus();
 	}
 }
